@@ -1,13 +1,10 @@
-Pure CSS Layout Examples
+Personal Website
 ========================
 
-Layout examples using [Pure CSS][pure] compiled from the [pure-site][] project.
-
-[pure]: http://purecss.io/
-[pure-site]: https://github.com/yahoo/pure-site
+This serves as a personal website for now.
 
 
-License
+License for Pure CSS
 -------
 
 This software is free to use under the Yahoo! Inc. BSD license.
