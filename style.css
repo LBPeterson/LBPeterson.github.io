@@ -7,13 +7,10 @@ h1,h2,h3,h4,h5 {
   font-weight: 400;
 }
 
-.wrapper {
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-}
 
+.flex {
+  padding: 2em 0em 0em 0em;
+}
 .flex-head {
   flex: 1 100%;
   text-align: center;
@@ -43,15 +40,13 @@ img {
 h3{
   text-align: center;
 }
-.flex {
-  flex: 1 100%;
-  margin: 10px;
-
-}
 
 @media screen and (min-width: 750px) {
-.flex {  padding-left: 20%; padding-right: 20%;}
+  .flex {
+    padding: 2em 20% 0em 20%;
+  }
 }
+
 ul, .list-style {
   padding: 0em 3em 0em 3em;
 }
