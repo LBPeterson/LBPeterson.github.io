@@ -1,153 +1,75 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+  <head>
+  <link rel="stylesheet" href="tufte.css"/>
+  <link rel="stylesheet" href="latex.css"/>
+  </head>
 
-    <title>Luke B. Peterson</title>
+  <body>
+    <article>
+      <h1>Luke B. Peterson</h1>
+      <subtitle>University of Minnesota - Twin Cities</subtitle>
+      <subtitle>Computer Science 2016</subtitle>
 
+      <section>
+        <h2>About Me</h2>
+        <p>I am a student at the University of Minnesota - Twin Cities persuing a major in computer science.
+        My goal is to graduate in May 2016 with an emphasis on Geographical Information Systems.</p>
+        <p>I grew up in southern Wisconsin and enjoy being outdoors. Running, climbing, and biking
+        are all activities that I participate in here in Minnesota.</p>
+      </section>
 
+      <section>
+        <h2>Technologies Used</h2>
+        <table>
+          <thead><tr><th></th></tr></thead>
+          <tbody>
+            <tr><td class="text">Python</td></tr>
+            <tr><td class="text">C</td></tr>
+            <tr><td class="text">C++</td></tr>
+            <tr><td class="text">Ruby</td></tr>
+            <tr><td class="text">Meteor</td></tr>
+            <tr><td class="text">Postgres</td></tr>
+            <tr><td class="text">HTML5/Javascript</td></tr>
+            <tr><td class="text">Php</td></tr>
+            <tr><td class="text">Selenium</td></tr>
+            <tr><td class="text">OpenStreetMap</td></tr>
+            <tr><td class="text">OpenLayers</td></tr>
+          </tbody>
+        </table>
+      </section>
 
+      <section>
+        <h2>Community Outreach</h2>
+        <h3>Co-Lab OpEx Innovation Contest</h3>
+        <p>I developed and presented a plan to improve bicycle-pedestrian interaction at the University of Minnesota.</p>
 
-<link rel="stylesheet" href="css/pure-min.css">
+        <h3>CSE Volunteering</h3>
+        <p>Heavily involved in CSE, including volunteering at several career fairs and homecoming events</p>
+        <p>Regular volunteer for CSE career fairs and UMN homecoming.</p>
 
-<script src="jquery-1.11.3.min.js"></script>
-<script src="js/ui.js"></script>
-<script src="jquery-1.11.3.min.js"></script>
+        <h3>CSE Student Mentoring</h3>
+        <p>Past TA for CSE 1001 as well as CSE First year mentor and CSE International Ambassador.</p>
 
+        <h3>Science and Enginnering Student Board</h3>
+        <p>Served as webmaster for the group as well as helping with group events; including card making for
+          children at the Masonic Childrens Hospital, Fundraisers like the Freezin' for a Reason 5k, and more.</p>
 
+        <h3>2013 Welcome Week Leader</h3>
+        <p>Over 100 hours volunteered</p>
+      </section>
 
-<style>
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700);
-html {
-  font-family:"Fira Sans";
-}
-.grey:hover {
-  opacity: 1;
-}
-.grey {
-  opacity: 0.4;
-}
-</style>
-
-
-
-
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/side-menu.css">
-    <!--<![endif]-->
-
-
-
-
-
-
-
-</head>
-<body>
-
-
-
-
-
-
-<div id="layout">
-    <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
-        <span></span>
-    </a>
-
-    <div id="menu">
-        <div class="pure-menu">
-            <a class="pure-menu-heading" href="#">Home</a>
-
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
-                <li class="pure-menu-item"><a href="https://github.com/LukeNoTomatoes" class="pure-menu-link">Github</a></li>
-                <li class="pure-menu-item"><a href="#community" class="pure-menu-link">Community</a></li>
-                <li class="pure-menu-item"><a href="#growth" class="pure-menu-link">Growth</a></li>
-                <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="main">
-        <div class="header">
-            <h1>Luke B. Peterson</h1>
-            <h2>A personal Webpage</h2>
-        </div>
-
-        <div class="content">
-          <a name="about"><h2 class="content-subhead">About Me</h2></a>
-            <p>I am a student at the University of Minnesota - Twin Cities persuing a major in computer science.
-            My goal is to graduate in May 2016 with an emphasis on Geographical Information Systems.</p>
-            <p>I grew up in southern Wisconsin and enjoy being outdoors. Running, climbing, and biking
-            are all activities that I participate in here in Minnesota.
-
-            <h2 class="content-subhead">Technologies Used</h2>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/python_128.png" alt="Python"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/C_128.png" alt="C"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/cpp_128.png" alt="C++"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/ruby_128.png" alt="Ruby"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/postgres_128.png" alt="PostgreSQL"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/js_128.png" alt="Javascript"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/html5_128.png" alt="HTML5"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/php_128.png" alt="php"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/selenium_128.png" alt="Selenium Webdriver"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/zope_128.png" alt="Zope CMS"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/osm_128.png" alt="OpenStreetMap"></div>
-              <div class="pure-u-1-6 "><img class="pure-img grey" src="img/openlayers_128.png" alt="Openlayers"></div>
-
-
-            <a name="community"><h2 class="content-subhead">Community Outreach</h2></a>
-            <ul>
-              <li>Finalist in the Co-Lab OpEx Innovation Contest. I developed and presented
-                  a plan to improve bicycle-pedestrian interaction
-                at the University of Minnesota.</li>
-              <li>Regular volunteer for CSE career fairs and UMN homecoming.</li>
-              <li>I volunteer several hours per week for the Science and Engineering
-                Student Board and their various events; including card making for
-                children at the Masonic Childrens Hospital, Fundraisers like the
-                Freezin' for a Reason 5k, and more.</li>
-              <li>I volunteered more than 100 hours to be a UMN Welcome Week Leader.</li>
-              <li>Was a TA in the College of Science and Engineering for CSE 1001.</li>
-              <li>Currently a CSE First year mentor and CSE International Ambassador.</li>
-              <li>Current webmaster and officer of the
-                <a class="link" href='http://www.umnsesb.org' target='_blank'>Science and Engineering Student Board</a></li>
-              <li>Member of the UMN ACM chapter</li>
-            </ul>
-
-            <a name="growth"><h2 class="content-subhead">Personal Growth</h2></a>
-            <ul>
-              <li>Attended LeaderShape leadership training seminar.</li>
-              <li>Experienced Scandiavia for several months studying sustainability, eco-tourism, and extreme sports.</li>
-              <li>I'm crazy (I enjoy running marathons).</li>
-              <li>Past Representative at Badger Boys State.</li>
-            </ul>
-
-            <a name="contact"><h2 class="content-subhead">Contact</h2></a>
-            Luke B. Peterson<br>
-            19 - 27th Ave SE<br>
-            Apt 202<br>
-            Minneapolis, MN 55414<br>
-            <br>
-            612-245-9863<br>
-            pete9348@umn.edu<br>
-        </div>
-    </div>
-</div>
+      <section>
+        <h2>Contact</h2>
+        <p>Luke B. Peterson</p>
+        <p><a href="https://github.com/LukeNoTomatoes">Github</a></p>
+        <p>612-245-9863</p>
+        <p>pete9348@umn.edu</p>
+      </section>
 
 
 
+    </article>
+  </body>
 
-
-<script src="js/ui.js"></script>
-
-
-</body>
 </html>
