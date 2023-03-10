@@ -1,73 +1,93 @@
 % LaTeX resume using res.cls
+% Generate pdf with `pdflatex resume.tex`'
 \documentclass[margin]{res}
 \setlength{\textwidth}{5.1in} % set width of text portion
 
 \begin{document}
-
-% Center the name over the entire width of resume:
  \moveleft.5\hoffset\centerline{\large\bf Luke B. Peterson}
-% Draw a horizontal line the whole width of resume:
+
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
+
  \moveleft.5\hoffset\centerline{peterson.lukeb@gmail.com}
  \moveleft.5\hoffset\centerline{(612) 245-9863}
 
-
 \begin{resume}
 
-
 \section{EDUCATION} {\sl Bachelor of Science,} Computer Science \\
-                University of Minnesota,
-                June 2016
+    University of Minnesota,
+    June 2016
 
 
 \section{SKILLS} {\sl Languages \& Software:}
-			Angular, AngularJS, Typescript, Webpack, Karma, Jasmine, Node, HTML, SCSS, VoiceOver, git  \\
+    React,
+    React Native,
+    Jest,
+    Testing Library,
+    DraftJs,
+    Angular,
+    TypeScript,
+    VoiceOver
+
 \section{WORK \\ EXPERIENCE}
-			  {\sl Software Engineer - Front End} \hfill Jan 2020 - Present \\
-				SportsEngine
-				Minneapolis, MN
-				\begin{itemize}  \itemsep -2pt
-					\item Led effort to pull a 5000+ line AngularJS app out of a monorepo and upgrade to use Angular, Typescript, Webpack, and modern build/test/deploy processes
-					\item Built modular Angular front end components for an internal component library
-					\item Created a front end services library to allow front end apps the reuse of non-ui service logic
-					\item Led efforts to implement accessibility improvements in several front end apps and components
-					\item Worked with UX team to provide feedback and build pleasant, reusable, and responsive web designs
-					\item Part of a fast moving team that delivered quality work while maintaining stringent unit test requirements and mandatory peer code reviews
+    {\sl Senior Software Engineer} \hfill Oct 2022 - Present \\
+    {\sl Software Engineer} \hfill Apr 2021 - Oct 2022 \\
+    Mobilize.io,
+	Remote
 
-				\end{itemize}
+    \begin{itemize}  \itemsep -2pt
+        \item Created patterns for writing well tested, performant, accessible, and reusable React and React Native components
+        \item Worked with product to deliver feature MVPs with realistic timelines at a sustainable pace
+        \item Followed a "characterize, refactor, rewrite" pattern for converting angularJs components into modern React components
+        \item Pair programmed with the team members for roughly 25\% of work hours
+        \item Quickly ramped up new teammates and contractors into effective contributors to the codebase
+        \item Provided feedback for the team's front and back end code reviews
+        \item Consolidated several existing rich text editors into a single performant and pleasant to use editor experience across the web app
+        \item Contributed several upstream patches to open source libraries
+        \item Upgraded a web app's build and deploy process dependencies from Node 12 to Node 18
+    \end{itemize}
 
-			  {\sl Software Engineer} \hfill Sept 2017 - Jan 2020 \\
-                ddms, inc.
-                Saint Paul, MN
-                \begin{itemize}  \itemsep -2pt %reduce space between items
-                \item Full stack development on an agile team using .Net and several modern JS frameworks across several projects
-                \item Modified a CMS library to use the remote S3 file system instead of the local file system for small scale video streaming
-                \item Led company wide product development and idea brainstorming 'hackathon'
-                \item Facilitated triage meetings with QA, product owners, and clients
-                \end{itemize}
+    {\sl Software Engineer - Front End} \hfill Jan 2020 - Apr 2021 \\
+    SportsEngine,
+	Minneapolis, MN
 
-                {\sl Systems Analyst} \hfill Sept 2016 - Sept 2017 \\
-                Allianz Life,
-                Minneapolis, MN
-                \begin{itemize}  \itemsep -2pt %reduce space between items
-                \item Full stack development of internal Java tools
-                \item Dev lead on one of the first Agile teams within company
-                \item Implemented CI processes to improve project build and deployment time
-                \item Utilized dataflow analysis in order to determine downstream affects of product changes
-                \end{itemize}
+	\begin{itemize}  \itemsep -2pt
+	    \item Led effort to pull a 5000+ line AngularJS app out of a monorepo and upgrade to use Angular, Typescript, Webpack, and modern build/test/deploy processes
+		\item Built modular Angular front end components for an internal component library
+		\item Created a front end services library to allow front end apps the reuse of non-ui service logic
+		\item Led efforts to implement accessibility improvements in several front end apps and components
+		\item Worked with UX team to provide feedback and build pleasant, reusable, and responsive web designs
+%		\item Part of a fast moving team that delivered quality work while maintaining stringent unit test requirements and mandatory peer code review
+	\end{itemize}
 
+	{\sl Software Engineer} \hfill Sept 2017 - Jan 2020 \\
+    ddms, inc.
+    Saint Paul, MN
+    \begin{itemize}  \itemsep -2pt %reduce space between items
+        \item Full stack development on an agile team using .Net and several modern JS frameworks across several projects
+%        \item Modified a CMS library to use the remote S3 file system instead of the local file system for small scale video streaming
+%        \item Led company wide product development and idea brainstorming 'hackathon'
+%        \item Facilitated triage meetings with QA, product owners, and clients
+    \end{itemize}
+
+%    {\sl Systems Analyst} \hfill Sept 2016 - Sept 2017 \\
+%    Allianz Life,
+%    Minneapolis, MN
+%    \begin{itemize}  \itemsep -2pt %reduce space between items
+%        \item Full stack development of internal Java tools
+%        \item Dev lead on one of the first Agile teams within company
+%        \item Implemented CI processes to improve project build and deployment time
+%        \item Utilized dataflow analysis in order to determine downstream affects of product changes
+%    \end{itemize}
 
 \section{CAREER \\ DEVELOPMENT}
-                Conferences Attended
-                \begin{itemize} \itemsep -2pt
-              \item axe-con - March 2021
-			  \item DevOps Days Minneapolis - August 2019
-			  \item Eyeo Festival - June 2019
-			  \item Minnebar - April 2019
-                \item Esri Developer Summit - March 2018
-                \end{itemize}
+    \begin{itemize} \itemsep -2pt
+        \item W3C Introduction to Web Accessibility certificate - Dec 2022
+        \item Attended axe-con - March 2021
+        \item Attended DevOps Days Minneapolis - August 2019
+%        \item Eyeo Festival - June 2019
+%        \item Minnebar - April 2019
+%        \item Esri Developer Summit - March 2018
+    \end{itemize}
 
 \end{resume}
 \end{document}
